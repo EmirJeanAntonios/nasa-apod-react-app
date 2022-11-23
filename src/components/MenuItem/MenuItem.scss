@@ -1,0 +1,10 @@
+.menu_item {
+    height: 20%;
+}
+
+@media screen and (max-width: 834px) {
+    .menu_item{
+        height: 100%;
+        flex: 0 0 100%;
+    }
+}

@@ -1,0 +1,49 @@
+.grid_container {
+    display: grid;
+    grid-template-areas: "main sidebar";
+    grid-template-columns: 80% 20%;
+
+    max-height: 100vh;
+}
+
+.apod_list {
+    max-height: 100vh;
+    overflow-y: scroll;
+
+    .apod {
+        cursor: pointer;
+
+
+        .content {
+            h2 {
+                font-size: 1rem;
+                margin: 0;
+            }
+
+            p {
+
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .grid_container {
+        grid-template-areas: unset;
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 20%;
+       
+        
+        height: 100vh;
+        max-height: 100vh;
+    }
+
+    .apod_list {
+        display: flex;
+
+        
+    }
+
+
+}
